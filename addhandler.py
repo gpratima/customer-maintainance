@@ -5,7 +5,7 @@ import json
 
 class AddHandler(tornado.web.RequestHandler):
     def initialize(self,Customers):
-        self.Customers = Customers
+        self.customers = Customers
         
     def get(self):
         cust_name = self.get_argument('cust_name')
