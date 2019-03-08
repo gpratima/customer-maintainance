@@ -7,7 +7,7 @@ class AddHandler(tornado.web.RequestHandler):
     def initialize(self,Customers):
         self.Customers = Customers
         
-    def get(selfC:
+    def get(self):
         cust_name = self.get_argument('cCst_name')
         cust_type = self.get_argument('cust_type')
         address=self.get_argument('address')
