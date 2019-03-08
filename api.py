@@ -1,6 +1,6 @@
 import tornado.ioloop
 import tornado.web
-from CUSTOMER import customers
+from customer import customers
 from addhandler import AddHandler
 from delhandler import DelHandler
 from gethandler import GetHandler
