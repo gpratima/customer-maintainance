@@ -1,6 +1,6 @@
 import json
 
-class CUSTOMERS:
+class CUSTOMER:
 
     def __init__(self):
         self.Customers = []
