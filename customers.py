@@ -18,8 +18,8 @@ class customers:
 
     def del_customer(self, phone):
         found = False
-        for idx, book in enumerate(self.customer):
-            if book["Phone"] == phone:
+        for idx, customer in enumerate(self.customer):
+            if customer["Phone"] == phone:
                 index = idx
                 found = True
                 del self.customer[idx]
