@@ -14,5 +14,5 @@ class AddHandler(tornado.web.RequestHandler):
         phone=self.get_argument('phone')
         state=self.get_argument('state')
         
-        result = self.Customers.add_customer(cust_name, cust_type, address, state, phone)
-         self.write(result)
+        result = self.customers.add_customer(cust_name, cust_type, address, state, phone)
+        self.write(result)
