@@ -12,14 +12,14 @@ class customers:
         new_customer["Addres: "]= address
         new_customer["State: "]= state
         new_customer["Phone: "]= phone
-        self.Customer.append(new_customer)
+        self.customer.append(new_customer)
         print("Customer: {0}".format(new_customer))
         return json.dumps(new_customer)
 
     def del_customer(self, phone):
         found = False
-        for idx, customer in enumerate(self.customer):
-            if customer["Phone"] == phone:
+        for idx, CUSTOMER in enumerate(self.customer):
+            if CUSTOMER["Phone"] == phone:
                 index = idx
                 found = True
                 del self.customer[idx]
