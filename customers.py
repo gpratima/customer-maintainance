@@ -12,8 +12,8 @@ class customers:
         new_customer["Addres: "]= address
         new_customer["State: "]= state
         new_customer["Phone: "]= phone
-        self.customer.append(new_customer)
-        print("Customet: {0}".format(new_customer))
+        self.Customer.append(new_customer)
+        print("Customer: {0}".format(new_customer))
         return json.dumps(new_customer)
 
     def del_customer(self, phone):
