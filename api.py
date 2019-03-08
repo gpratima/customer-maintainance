@@ -1,22 +1,22 @@
-import tornado.ioloop
+mport tornado.ioloop
 import tornado.web
 from customer import CUSTOMERS
 from addhandler import AddHandler
 from delhandler import DelHandler
 from gethandler import GetHandler
 
-customer = CUSTOMERS()
+Customers = CUSTOMER()
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("Customer Maintainance VERSION 1")
+        self.write("*** CUSTOMER Maintainance ***")
 
 def make_app():
     return tornado.web.Application([
         (r"/v1", MainHandler),
-        (r"/v1/addcust", AddHandler, dict(customer = customer)),
-        (r"/v1/delcust", DelHandler, dict(customer = customer)),
-        (r"/v1/getcust", GetHandler, dict(customer = customer)),
+        (r"/v1/addcustomer", AddHandler, dict(Customers = Customers)),
+        (r"/v1/delcustomer", DelHandler, dict(Customers = Customers)),
+        (r"/v1/getcustomer", GetHandler, dict(Customers = Customers)),
         ])
 
 if __name__ == "__main__":
