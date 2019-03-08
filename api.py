@@ -1,11 +1,11 @@
 import tornado.ioloop
 import tornado.web
-from CUSTOMER import customers
+from customer import CUSTOMERS
 from addhandler import AddHandler
 from delhandler import DelHandler
 from gethandler import GetHandler
 
-customer = customers()
+customer = CUSTOMERS()
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
