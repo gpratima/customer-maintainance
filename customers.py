@@ -1,6 +1,6 @@
 import json
 
-class customers:
+class CUSTOMERS:
 
     def __init__(self):
         self.customer = []
@@ -18,8 +18,8 @@ class customers:
 
     def del_customer(self, phone):
         found = False
-        for idx, CUSTOMER in enumerate(self.customer):
-            if CUSTOMER["Phone"] == phone:
+        for idx, customers in enumerate(self.customer):
+            if customers["Phone"] == phone:
                 index = idx
                 found = True
                 del self.customer[idx]
