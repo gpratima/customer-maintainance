@@ -13,20 +13,20 @@ class CUSTOMER:
         new_customer["State: "]= state
         new_customer["Phone: "]= phone
         self.Customers.append(new_customer)
-        print("Customer: {0}".format(new_customer))
+        print("CUSTOMER: {0}".format(new_customer))
         return json.dumps(new_customer)
 
     def del_customer(self, phone):
         found = False
-        for idx, customers in enumerate(self.Customers):
-            if customer["Phone"] == phone:
+        for idx, Cust_DB in enumerate(self.Customers):
+            if Cust_DB["cust_name"] == cust_name:
                 index = idx
                 found = True
                 del self.Customers[idx]
         print("Customers: {0}".format(json.dumps(self.Customers)))
         return found
 
-    def get_all_customer(self):
+    def get_all_Customers(self):
         return self.Customers
 
     def json_list(self):
