@@ -8,7 +8,7 @@ class DelHandler(tornado.web.RequestHandler):
         self.Customers = Customers
         
     def get(self):
-        phone = self.get_argument('cust_name')
+        cust_name = self.get_argument('cust_name')
         result = self.Customers.del_customer(cust_name)
         if result:
             self.write("Deleted Customer phone: {0} successfully".format(cust_name))
