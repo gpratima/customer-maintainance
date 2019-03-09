@@ -1,0 +1,3 @@
+#http://localhost:8888/v1/addcustomer?cust_name=%22Pai%20International%22&cust_type=%22Electronics%22&state=%22Delhi%22
+#http://localhost:8888/v1/addcustomer?cust_name=%22Emdee%20Enterprices%22&cust_type=%22Apparel%22&state=%22Kerala%22
+#http://localhost:8888/v1/delcustomer?cust_name=%22Emdee%20Enterprices%22
