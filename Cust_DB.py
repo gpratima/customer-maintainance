@@ -7,7 +7,7 @@ class CUSTOMER:
 
     def add_customer(self, cust_name, cust_type, state):
         new_customer = {}
-        new_customer["cust_name: "] = cust_name
+        new_customer["cust_name"] = cust_name
         new_customer["Customer Type: "] = cust_type
         new_customer["State: "]= state
         self.Customers.append(new_customer)
