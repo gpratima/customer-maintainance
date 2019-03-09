@@ -5,18 +5,16 @@ class CUSTOMER:
     def __init__(self):
         self.Customers = []
 
-    def add_customer(self, cust_name, cust_type, address, state, phone):
+    def add_customer(self, cust_name, cust_type, state):
         new_customer = {}
         new_customer["Customer Name: "] = cust_name
         new_customer["Customer Type: "] = cust_type
-        new_customer["Addres: "]= address
         new_customer["State: "]= state
-        new_customer["Phone: "]= phone
         self.Customers.append(new_customer)
         print("CUSTOMER: {0}".format(new_customer))
         return json.dumps(new_customer)
 
-    def del_customer(self, phone):
+    def del_customer(self, cust_name):
         found = False
         for idx, Cust_DB in enumerate(self.Customers):
             if Cust_DB["cust_name"] == cust_name:
